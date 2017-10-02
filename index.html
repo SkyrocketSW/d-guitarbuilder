@@ -98,20 +98,109 @@
      if(localStorage.getItem('hardware')) {
      	window.hardware = localStorage.getItem("hardware"); 
      } else {
-     	window.hardware = "D_Hardware>Black";
+     	//window.hardware = ">Black";
+     	window.hardware = ">Blank";
      }
-     
-     if(localStorage.getItem('pickups')) {
-     	window.pickups = localStorage.getItem("pickups");
+     if(localStorage.getItem('hardwareDescription')) {
+     	window.hardwareDescription = localStorage.getItem("hardwareDescription");
      } else {
-     	window.pickups = "D_Pickups>Humbucker";
+     	window.hardwareDescription = "";
      }
+	if(localStorage.getItem('hardwarePrice')) {
+     	window.hardwarePrice = localStorage.getItem("hardwarePrice"); 
+     } else {
+     	window.hardwarePrice = 0.00;
+     }  
      
+     // Bridge
      if(localStorage.getItem('bridge')) {
      	window.bridge = localStorage.getItem("bridge");
      } else {
-     	window.bridge = "D_Bridge>FR>Black";
+     	//window.bridge = "D_Bridge>FR";
+     	window.bridge = "D_Bridge>HT";
      }
+     if(localStorage.getItem('bridgeDescription')) {
+     	window.bridgeDescription = localStorage.getItem("bridgeDescription");
+     } else {
+     	window.bridgeDescription = "";
+     }
+	if(localStorage.getItem('bridgePrice')) {
+     	window.bridgePrice = localStorage.getItem("bridgePrice"); 
+     } else {
+     	window.bridgePrice = 0.00;
+     }
+     
+     // Pickups
+     if(localStorage.getItem('pickups')) {
+     	window.pickups = localStorage.getItem("pickups");
+     } else {
+     	//window.pickups = "D_Pickups>Humbucker";
+     	window.pickups = "D_Pickups>Blank";
+     }
+     if(localStorage.getItem('pickupsDescription')) {
+     	window.pickupsDescription = localStorage.getItem("pickupsDescription");
+     } else {
+     	window.pickupsDescription = "";
+     }
+	if(localStorage.getItem('pickupsPrice')) {
+     	window.pickupsPrice = localStorage.getItem("pickupsPrice"); 
+     } else {
+     	window.pickupsPrice = 0.00;
+     }
+     // LED Fret Markers
+     if(localStorage.getItem('LEDs')) {
+     	window.LEDs = localStorage.getItem("LEDs");
+     } else {
+     	window.LEDs = "D_LED>None";
+     }
+     if(localStorage.getItem('LEDsDescription')) {
+     	window.LEDsDescription = localStorage.getItem("LEDsDescription");
+     } else {
+     	window.LEDsDescription = "";
+     }
+	if(localStorage.getItem('LEDsPrice')) {
+     	window.LEDsPrice = localStorage.getItem("LEDsPrice"); 
+     } else {
+     	window.LEDsPrice = 0.00;
+     }
+     // Pickup Switches
+     if(localStorage.getItem('switches')) {
+     	window.switches = localStorage.getItem("switches");
+     } else {
+     	window.switches = "";
+     }
+     if(localStorage.getItem('switchesDescription')) {
+     	window.switchesDescription = localStorage.getItem("switchesDescription");
+     } else {
+     	window.switchesDescription = "";
+     }
+	if(localStorage.getItem('switchesPrice')) {
+     	window.switchesPrice = localStorage.getItem("switchesPrice"); 
+     } else {
+     	window.switchesPrice = 0.00;
+     }
+     // Headstock Label
+     if(localStorage.getItem('headstock')) {
+     	window.headstock = localStorage.getItem("headstock");
+     } else {
+     	window.headstock = "";
+     }
+     if(localStorage.getItem('headstockDescription')) {
+     	window.headstockDescription = localStorage.getItem("headstockDescription");
+     } else {
+     	window.headstockDescription = "";
+     }
+	if(localStorage.getItem('headstockPrice')) {
+     	window.headstockPrice = localStorage.getItem("headstockPrice"); 
+     } else {
+     	window.headstockPrice = 0.00;
+     }
+     if(localStorage.getItem('headstockText')) {
+     	window.headstockText = localStorage.getItem("headstockText");
+     } else {
+     	window.headstockText = "";
+     }
+     
 
     	
     	</script>
@@ -123,7 +212,7 @@
 	<!-- copy these lines to your document: -->
 
 	<div id="index_hype_container" style="margin:auto;position:relative;width:1000px;height:1000px;overflow:hidden;">
-		<script type="text/javascript" charset="utf-8" src="index.hyperesources/index_hype_generated_script.js?86630"></script>
+		<script type="text/javascript" charset="utf-8" src="index.hyperesources/index_hype_generated_script.js?51518"></script>
 	</div>
 
 	<!-- end copy -->
@@ -151,8 +240,6 @@ $300.00
 		<div></div>
 		<div>Vegas Green
 $300.00
-</div>
-		<div>Reset
 </div>
 		<div>Key
 Biscayne
@@ -243,6 +330,125 @@ $100.00
 		<div>Rosewood
 
 $100.00
+</div>
+		<div>Black
+
+No Charge
+</div>
+		<div>Gold
+
+No Charge
+</div>
+		<div>Hardware Finish: Choose a finish for your tuner, knobs, and bridge.
+</div>
+		<div>Chrome
+
+No Charge
+</div>
+		<div>Bridge: Choose a bridge style for your guitar.
+</div>
+		<div>Licensed
+Floyd Rose
+$50.00
+</div>
+		<div>TTM Ultra
+Trem®
+$40.00
+</div>
+		<div>String-Thru
+Hard-Tail
+$25.00
+</div>
+		<div>Humbucker
++Single Slant
+$125.00
+</div>
+		<div>HSS
+
+$175.00
+</div>
+		<div>Humbucker
+
+$80.00
+</div>
+		<div>Hot Rodded Set
+
+$150.00
+</div>
+		<div>Humbucker
++Single
+$125.00
+</div>
+		<div>Purchase
+</div>
+		<div>Blackouts Set
+
+$200.00
+</div>
+		<div>Pickup Configuration: Choose a pickup configuration for your guitar.
+</div>
+		<div>Mayhem Set
+
+$150.00
+</div>
+		<div>HSH
+
+$225.00
+</div>
+		<div>Dot Fret
+Markers
+No Charge
+</div>
+		<div>Red LED Fret
+Markers
+$75.00
+</div>
+		<div>Standard
+Devastator
+No Charge
+</div>
+		<div>Blue LED Fret
+Markers
+$75.00
+</div>
+		<div>Green LED Fret
+Markers
+$75.00
+</div>
+		<div>Amber LED Fret
+Markers
+$75.00
+</div>
+		<div>Fingerboard Inlays: Choose which type of inlays you want for your guitar. (Optional)
+</div>
+		<div>Three-Way
+Blade
+No Charge
+</div>
+		<div>Five-Way
+Blade
+No Charge
+</div>
+		<div>Pickup Switch: Change your pickup switch. (Optional)
+</div>
+		<div>Three-Way
+Toggle
+No Charge
+</div>
+		<div>Standard
+TTM Logo
+No Charge
+</div>
+		<div>Logo with
+Custom Text
+$45.00
+</div>
+		<div></div>
+		<div>Enter
+</div>
+		<div>Headstock Label: Add your name, band or brand to the headstock of the guitar. (Optional)
+</div>
+		<div>Start Over
 </div>
 
 	</div>
